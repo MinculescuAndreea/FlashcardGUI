@@ -1,10 +1,8 @@
 from window import Window
-from flashcard import Flashcard
-import pandas as pd
+from flashcardUI import FlashcardApp
 
+# generate window object
 root = Window("Flashcard GUI")
-
-vocab_pairs = pd.read_csv("vocabulary.csv")
-for (idx,row) in vocab_pairs.iterrows():
-    card = Flashcard(root, row["Face1"], row["Face2"])
-    root.mainloop()
+# generate GUI object
+app = FlashcardApp(root, vocab_path="vocabulary.csv")
+root.mainloop()
