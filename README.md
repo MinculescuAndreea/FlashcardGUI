@@ -1,5 +1,7 @@
 # FlashcardGUI
 
+Flashcard app, created in Python with Tkinter, to aid language learning by displaying words and, upon button click, their translations. It reads data from a CSV file and allows users to add new word pairs. It is meant as a simple tool for vocabulary learning.
+
 The code was written in Python 3.10.0 and the package versions are stored in ```requirements.txt```. The code can be run by calling ```quickstart.py```.
 
 * ```quickstart.py``` - file to run
